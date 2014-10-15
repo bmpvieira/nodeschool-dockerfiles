@@ -8,7 +8,7 @@ RUN n 0.10.31
 
 RUN mkdir /expose
 WORKDIR /expose
-RUN npm install expose-bash-over-websockets http-proxy
+RUN npm install bmpvieira/expose-bash-over-websockets http-proxy
 ADD proxy.js /expose/proxy.js
 
 WORKDIR /root
